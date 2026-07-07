@@ -1,8 +1,16 @@
-# Stableexpression Galaxy wrapper
+# nf-core/stableexpression Galaxy wrapper
 
 This repository contains code to wrap the [stableexpression](https://github.com/nf-core/stableexpression) Nextflow pipeline for use in Galaxy.
 
-The following instructions need to performed for each release
+It contains two main components:
+- `build`: a collection of scripts to build the XML file for the tool
+- `tool_shed`: the wrapper for the tool shed
+
+It also contains scripts to test the wrapper and serve a local Galaxy instance.
+
+The following instructions need to performed for each release.
+
+## Setup
 
 >[!TIP]
 >For the first time setup of Galaxy for you Nextflow pipeline, see the [setup instructions](setup.md)
@@ -10,7 +18,7 @@ The following instructions need to performed for each release
 ## Activate environment
 
 >[!NOTE]
->If you're planemo environment is not set up, see the [setup instructions](setup.md)
+>If your planemo environment is not set up, see the [setup instructions](setup.md)
 
 Activate your planemo environment:
 ```
